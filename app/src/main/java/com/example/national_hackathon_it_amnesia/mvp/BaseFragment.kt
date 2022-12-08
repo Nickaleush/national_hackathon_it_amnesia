@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
 import com.example.national_hackathon_it_amnesia.BuildConfig
-import com.example.national_hackathon_it_amnesia.activity.MainActivity
+import com.example.national_hackathon_it_amnesia.ui.activity.MainActivity
 
 import javax.inject.Inject
 

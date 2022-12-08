@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/friendAvatarImageView"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_userprofile_default" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/friendNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/DefaultUserName"
+        android:fontFamily="@font/gteestiprotext_regular"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/friendAvatarImageView"
+        app:layout_constraintTop_toTopOf="@id/friendAvatarImageView" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/friendMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/rounded_button_shape"
+        android:maxWidth="292dp"
+        android:paddingStart="16dp"
+        android:paddingTop="13dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="11dp"
+        android:text="@{item.message}"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gteestiprotext_regular"
+        app:layout_constraintStart_toEndOf="@id/friendAvatarImageView"
+        app:layout_constraintTop_toBottomOf="@id/friendNameTextView"
+        app:layout_goneMarginStart="38dp"
+        tools:text="hello world" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:id="@+id/timeTextView"
+        android:text="@string/DefaultTime"
+        android:fontFamily="@font/gteestiprotext_regular"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/friendMessageTextView"
+        app:layout_constraintStart_toEndOf="@id/friendMessageTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

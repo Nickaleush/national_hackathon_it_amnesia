@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/chatFragment"
+        android:title="@string/Home"
+        android:iconTint="@color/mainColor"
+        android:icon="@drawable/home_icon_foreground"
+        />
+
+    <item
+        android:id="@+id/profileFragment"
+        android:title="@string/Profile"
+        android:iconTint="@color/mainColor"
+        android:icon="@drawable/people_icon_foreground"
+        />
+
+</menu>

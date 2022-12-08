@@ -1,6 +1,6 @@
 package com.example.national_hackathon_it_amnesia.di.components
 
-import com.example.national_hackathon_it_amnesia.activity.MainActivity
+import com.example.national_hackathon_it_amnesia.ui.activity.MainActivity
 import com.example.national_hackathon_it_amnesia.di.modules.MainModule
 import com.example.national_hackathon_it_amnesia.di.scopes.MainScope
 import dagger.Subcomponent

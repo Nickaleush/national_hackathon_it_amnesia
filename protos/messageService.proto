@@ -1,0 +1,14 @@
+syntax = "proto3";
+package com.itamnesia.hackaton.contract;
+
+message MessageRequest {
+  string data = 1;
+}
+
+message MessageResponse {
+  string data = 1;
+}
+
+service MessageService {
+  rpc sendMessage(MessageRequest) returns (stream MessageResponse);
+}
